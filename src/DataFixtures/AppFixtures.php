@@ -13,16 +13,15 @@ class AppFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
 
-        
-        $userchauffeur = new Userchauffeur(); 
-        for($i = 1;$i<=10;$i){
+        for($i = 1;$i<=10;$i++){
+            
+            $userchauffeur = new Userchauffeur();
             $userchauffeur->setNom("chauffeur N° ".$i)
-                          ->setPrenom("prenom ".$i);
+                          ->setPrenom("prenom ".$i)
+                          ->setEmail('a@a.a')
+                          ->setPassword('non');
             $manager->persist($userchauffeur); 
         }
-        
-        
-
         $manager->flush();
-    }
+}
 }

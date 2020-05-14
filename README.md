@@ -59,3 +59,12 @@ composer require symfony/apache-pack
 ```
 
 ## CONTROLLER 
+
+
+## BASE DE DONNÉES
+​
+- ligne 32 dans .env (y modifier avec les informations de connexion phpMyAdmin) :
+```
+DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7 
+- exemple: DATABASE_URL=mysql://root:root@127.0.0.1:8889/nom du projet?serverVersion=5.7
+```
